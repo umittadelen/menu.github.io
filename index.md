@@ -15,240 +15,90 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <style>
-	$basic-dark-color: #212121;
-$basic-light-color: #fff;
-$fb-color: #3b5998;
-$tw-color: #00aced;
-$g-plus: #dd4b39;
-$dribbble: #ea4c89;
-$pinterest: #cb2027;
-$insta: #bc2a8d;
-$in: #007bb6;
-$vimeo: #1ab7ea;
-$border-radius: 10px;
-$font-size: 25px;
-
-/*common styles !!!YOU DON'T NEED THEM */
-.container {
-  margin: 60px auto 0px auto;
+body {
   text-align: center;
-  
-  h1 {
-    font: {
-      family: 'Roboto', sans-serif;
-      weight: 900;
-      size: 30px;
-    }
-    text-transform: uppercase;
-    color: $basic-dark-color;
-    letter-spacing: 3px;
-    
-    span {
-      display: inline-block;
-      
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        width: 34px;
-        height: 2px;
-        background-color: $basic-dark-color;
-        margin: 0px 0px 0px 2px;
-      }
-    }
-  }
+  font-family: Arial;
+  background: #f8f8f8;
 }
 
-.effect {
-  width: 100%;
-  padding: 50px 0px 70px 0px;
-  background-color: $basic-dark-color;
-  
-  h2 {
-    color: $basic-light-color;
-    font: {
-      family: 'Playfair Display', serif;
-      weight: 400;
-      size: 25px;
-    }
-    letter-spacing: 3px;
-  }
-  
-  &:nth-child(2) {
-    margin-top: 50px;
-  }
-  
-  &:nth-child(2n+1) {
-    background-color: $basic-light-color;
-    
-    h2 {
-      color: $basic-dark-color;
-    }
-  }
-  
-  .buttons {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
+.buttons {
+  margin-top: 160px;
   
   a {
-    
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-}
-
-/*common link styles !!!YOU NEED THEM*/
-.effect {
-  /*display: flex; !!!uncomment this line !!!*/
-  
-  a {
-    text-decoration: none !important;
-    color: $basic-light-color;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-radius;
-    margin-right: 20px;
-    font-size: $font-size;
-    overflow: hidden;
+    margin-right: 30px;
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+    display: inline-block;
     position: relative;
+    line-height: 64px;
+    background-color: #eaeaea;
+    background-image: linear-gradient(to bottom, #f6f6f6, #eaeaea);
+    border-radius: 32px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
     
-    i {
-      position: relative;
-      z-index: 3;
-    }
-    
-    &.fb {
-      background-color: $fb-color;
-    }
-    
-    &.tw {
-      background-color: $tw-color;
-    }
-    
-    &.g-plus {
-      background-color: $g-plus;
-    }
-    
-    &.dribbble {
-      background-color: $dribbble;
-    }
-    
-    &.pinterest {
-      background-color: $pinterest;
-    }
-    
-    &.insta {
-      background-color: $insta;
-    }
-    
-    &.in {
-      background-color: $in;
-    }
-    
-    &.vimeo {
-      background-color: $vimeo;
-    }
-  }
-}
-
-/* aeneas effect */
-
-.effect.aeneas {
-  
-  a {
-    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-    
-    i {
-      transition: transform 0.4s linear 0s;
-    }
-    
-    &:hover {
-      transform: rotate(360deg);
-      border-radius: 50%;
+    &:active {
+      top: 1px;
+      background-image: linear-gradient(to bottom, #eaeaea, #f6f6f6);
       
-      i {
-        transform: rotate(-360deg);
+      &::before {
+        top: -9px;
+      }
+    }
+    
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -8px; right: -8px; bottom: -8px; left: -8px;
+      background-color: #eaeaea;
+      border-radius: 140px;
+      opacity: 0.5;
+      
+      :hover & {
+        opacity: 1;
       }
     }
   }
+  
+  
 }
 
-/* jaques effect */
-.effect.jaques {
-  
-  a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-    
-    &:hover {
-      border-radius: 50%;
-    }
-  }
+.twitter:hover::before {
+  background-color: #c6f0f8;
 }
 
-/* egeon effect */
-.effect.egeon {
-  
-  a {
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
-    
-    i {
-      transition: transform 0.2s linear 0s;
-    }
-    
-    &:hover {
-      transform: rotate(-90deg);
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-left-radius: 50%;
-      
-      i {
-        transform: rotate(90deg);
-      }
-    }
-  }
+.facebook:hover::before {
+  background-color: #dae1f0;
 }
 
-/* claudio effect */
-
-.effect.claudio {
-  
-  a { 
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
-    
-    &:hover {
-      transform: scale(1.2);
-      border-bottom-left-radius: 50%;
-      border-top-right-radius: 50%;
-    }
-  }
+.youtube:hover::before {
+  background-color: #fadae6;
 }
 
-/* laertes effect */
+.twitch:hover::before {
+  background-color: #f8ebb6;
+}
 
-.effect.laertes {
-  
-  a {
-    transition: all 0.2s linear 0s;
-    
-    i {
-      transition: all 0.2s linear 0s;
-    }
-   
-    &:hover {
-      border-radius: 50%/20%;
-      
-      i {
-        transform: scale(1.1);
-        text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
-      }
-    }
-  }
+.footer {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #cdcdcd;
+  text-shadow: 1px 2px 0 #fff;
+}
+
+.footer a {
+    color: #bebebe;
+    text-decoration: none;
+}
+
+.footer a:hover {
+  color: #bebebe;
+  text-decoration: none;
+  border-bottom:1px dashed #cdcdcd;
 }
 </style>
 
@@ -329,23 +179,15 @@ $font-size: 25px;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
-<div class="container">
-  <h1>CSS3 Social <span>bu</span>ttons vol.1</h1>
-  <div class="effect aeneas">
-    <h2>Aeneas</h2>
-    <div class="buttons">
-      <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-      <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-      <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-      <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-      <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    </div>
+<div class="buttons">
+    <a class="twitter" href=""><i class="fa fa-twitter"></i></a>
+    <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
+    <a class="youtube" href=""><i class="fa fa-youtube-play"></i></a>
+    <a class="twitch" href=""><i class="fa fa-twitch"></i></a>
   </div>
-  
-</div>
+  <div class="footer">
+    CSS3 Circle Social Buttons by <a href="http://azmind.com">Azmind.com</a> - Follow me on <a href="https://www.facebook.com/pages/Azmindcom/196582707093191">Facebook</a> and <a href="https://twitter.com/anli_zaimi">Twitter</a>!
+  </div>
   
 
   </body>
