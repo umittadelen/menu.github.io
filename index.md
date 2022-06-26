@@ -184,10 +184,7 @@ body {
     <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
     <a class="youtube" href=""><i class="fa fa-youtube-play"></i></a>
     <a class="twitch" href=""><i class="fa fa-twitch"></i></a>
-  </div>
-  <div class="footer">
-    CSS3 Circle Social Buttons by <a href="http://azmind.com">Azmind.com</a> - Follow me on <a href="https://www.facebook.com/pages/Azmindcom/196582707093191">Facebook</a> and <a href="https://twitter.com/anli_zaimi">Twitter</a>!
-  </div>
+</div>
   
 
   </body>
