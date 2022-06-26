@@ -172,15 +172,13 @@ div.fa
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
-<div class="content-center"> 
-	<ul>
-  		<li><a href="#" class="icon-1"><div class="fa fa-twitter"></div><i class="fa fa-twitter"></i></a></li>
-  		<li><a href="#" class="icon-2"><div class="fa fa-pinterest-p"></div><i class="fa fa-pinterest-p"></i></a></li>
-  		<li><a href="#" class="icon-3"><div class="fa fa-vk"></div><i class="fa fa-vk"></i></a></li>
-  		<li><a href="#" class="icon-4"><div class="fa fa-dribbble"></div><i class="fa fa-dribbble"></i></a></li>
-  		<li><a href="#" class="icon-5"><div class="fa fa-facebook"></div><i class="fa fa-facebook"></i></a></li>
-	</ul>
-</div>
+    <ul>
+	<li><a href="#" class="icon-1"><div class="fa fa-twitter"></div><i class="fa fa-twitter"></i></a></li>
+	<li><a href="#" class="icon-2"><div class="fa fa-pinterest-p"></div><i class="fa fa-pinterest-p"></i></a></li>
+	<li><a href="#" class="icon-3"><div class="fa fa-vk"></div><i class="fa fa-vk"></i></a></li>
+	<li><a href="#" class="icon-4"><div class="fa fa-dribbble"></div><i class="fa fa-dribbble"></i></a></li>
+	<li><a href="#" class="icon-5"><div class="fa fa-facebook"></div><i class="fa fa-facebook"></i></a></li>
+    </ul>
   
 
   </body>
