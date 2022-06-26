@@ -329,10 +329,7 @@ $font-size: 25px;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     
-
-  
-</div>
-<div class="content-center">
+<div class="content-center"> 
   <div class="effect aeneas">
     <h2>Aeneas</h2>
     <div class="buttons">
@@ -342,5 +339,8 @@ $font-size: 25px;
     </div>
 	</div>
 </div>
+  
+</div>
+
   </body>
 </html>
