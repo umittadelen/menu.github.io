@@ -14,79 +14,86 @@
     <script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-    <style>
-@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
+<style>
+*
+  transition all .3s, background .2s, color .1s, transform .4s, opacity .8s
+  
+body
+  background #fff
+  
+h1
+  text-align center
+  margin 0
+  padding 50px 0 0 0
+  font-family "Open Sans"
+  font-weight 300
+  font-size 5vw
+  color rgba(#BC232E, .5)
 
-.button-wrap {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  display: inline-block;
-  margin: 25px 50px 0;
-  cursor: pointer;
-  border-radius: 100%;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+ul
+  display flex
+  flex-direction row
+  list-style none
+  padding 0 20px
+  align-items center
+  height 100vh
+  justify-content center
+  @media (max-width 850px)
+    flex-direction column
+  @media (max-height 500px)
+    flex-direction row
   
-  &.facebook {
-    background-color: #3B5998;
-    i.active { color: #3B5998; }
-  }
+ul li
+  min-width 160px
+  @media (max-width 600px)
+    min-width 70px
+  @media (max-width 850px)
+    margin-bottom 20px
   
-  &.twitter {
-    background-color: #0AC;
-    i.active { color: #0AC; }
-  }
-  
-  &.pinterest {
-    background-color: #CD2129;
-    i.active { color: #CD2129; }
-  }
-  
-  &.dribbble {
-    background-color: #F26798;
-    i.active { color: #F26798; }
-  }
-  
-  &:hover {
-    .button-inner-wrap {
-      width: 115px;
-      height: 115px;
-      
-      i.inactive { transform: translate(100px, -50%); }
-      i.active { transform: translate(-50%, -50%); }
-    }
-  }
-}
-
-.button-inner-wrap {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #DDD;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  overflow: hidden;
-  background-color: #FFF;
-  border-radius: 100%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease;
-  
-  i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 50px;
-    transition: all 0.3s ease;
+ul li a
+  display block
+  padding 20px 0
+  font-size 24px
+  text-align center
+  position relative
+  &:hover
+    color #fff
+  &:hover i
+    transform scale(5) rotate(360deg)
+    opacity 0
+    @media (max-width 600px)
+      transform scale(4.4) rotate(360deg)
+  &:hover div.fa
+    transition all 1.5s
+    opacity 1
     
-    &.inactive {
-      color: #CCC;
-      transform: translate(-50%, -50%);
-    }
     
-    &.active { transform: translate(-150px, -50%); }
-  }
-}
-    </style>
+.icon-1
+  color #fff
+  background #1DA1F2
+  
+.icon-2
+  color #fff
+  background #BC232E
+  
+.icon-3
+  color #fff
+  background #597BA0
+  
+.icon-4
+  color #fff
+  background #E35A8E
+  
+.icon-5
+  color #fff
+  background #3B5998
+    
+div.fa
+  position absolute
+  top center
+  left center
+  opacity 0
+</style>
 
   </head>
   <body>
@@ -166,21 +173,13 @@
     -->
 
 <div class="content-center"> 
-	<div onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'" class="button-wrap facebook">
-  		<div class="button-inner-wrap">
-    		<i class="icon-facebook inactive"></i>
-    		<i class="icon-facebook active"></i>
-  	</div>
-	<div onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'" class="button-wrap instagram">
-  		<div class="button-inner-wrap">
-    		<i class="icon-instagram inactive"></i>
-    		<i class="icon-instagram active"></i>
-  	</div>
-	<div onclick="location.href=''" class="button-wrap envelope">
-  		<div class="button-inner-wrap">
-    		<i class="icon-envelope inactive"></i>
-    		<i class="icon-envelope active"></i>
-  	</div>
+	<ul>
+  		<li><a href="#" class="icon-1"><div class="fa fa-twitter"></div><i class="fa fa-twitter"></i></a></li>
+  		<li><a href="#" class="icon-2"><div class="fa fa-pinterest-p"></div><i class="fa fa-pinterest-p"></i></a></li>
+  		<li><a href="#" class="icon-3"><div class="fa fa-vk"></div><i class="fa fa-vk"></i></a></li>
+  		<li><a href="#" class="icon-4"><div class="fa fa-dribbble"></div><i class="fa fa-dribbble"></i></a></li>
+  		<li><a href="#" class="icon-5"><div class="fa fa-facebook"></div><i class="fa fa-facebook"></i></a></li>
+	</ul>
 </div>
   
 
