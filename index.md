@@ -17,7 +17,7 @@
   </head>
   <body>
   <div class="container">
-	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -39,56 +39,59 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="menu/1.jpg" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="menu/1.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img src="menu/2.jpg" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="menu/2.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img src="menu/3.jpg" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="menu/3.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/4.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/4.jpg" alt="Fourth slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/5.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/5.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/6.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/6.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/7.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/7.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/8.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/8.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/9.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/9.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/10.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/10.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/11.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/11.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/12.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/12.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/13.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/13.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/14.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/14.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/15.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/15.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/16.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/16.jpg" alt="Third slide">
     </div>
-    <div class="carousel-item">
-      <img src="menu/17.jpg" class="d-block w-100" alt="...">
+	  <div class="carousel-item">
+      <img class="d-block w-100" src="menu/17.jpg" alt="Third slide">
     </div>
+	  
+
+  </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
