@@ -16,152 +16,145 @@
 
 <style>
 	$basic-dark-color: #212121;
-$basic-light-color: #fff;
-$fb-color: #3b5998;
-$tw-color: #00aced;
-$g-plus: #dd4b39;
-$dribbble: #ea4c89;
-$pinterest: #cb2027;
-$insta: #bc2a8d;
-$in: #007bb6;
-$vimeo: #1ab7ea;
-$border-radius: 10px;
-$font-size: 25px;
-
-/*common styles !!!YOU DON'T NEED THEM */
-.container {
-  margin: 60px auto 0px auto;
-  text-align: center;
+	$basic-light-color: #fff;
+	$fb-color: #3b5998;
+	$tw-color: #00aced;
+	$g-plus: #dd4b39;
+	$dribbble: #ea4c89;
+	$pinterest: #cb2027;
+	$insta: #bc2a8d;
+	$in: #007bb6;
+	$vimeo: #1ab7ea;
+	$border-radius: 10px;
+	$font-size: 25px;
+	.container {
+  		margin: 60px auto 0px auto;
+  		text-align: center;
   
-  h1 {
-    font: {
-      family: 'Roboto', sans-serif;
-      weight: 900;
-      size: 30px;
-    }
-    text-transform: uppercase;
-    color: $basic-dark-color;
-    letter-spacing: 3px;
+  		h1 {
+    			font: {
+      				family: 'Roboto', sans-serif;
+      				weight: 900;
+      				size: 30px;
+    			}
+    			text-transform: uppercase;
+    			color: $basic-dark-color;
+    			letter-spacing: 3px;
     
-    span {
-      display: inline-block;
+    			span {
+      				display: inline-block;
       
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        width: 34px;
-        height: 2px;
-        background-color: $basic-dark-color;
-        margin: 0px 0px 0px 2px;
-      }
-    }
-  }
-}
+      				&:before,
+      				&:after {
+        				content: "";
+        				display: block;
+        				width: 34px;
+        				height: 2px;
+        				background-color: $basic-dark-color;
+        				margin: 0px 0px 0px 2px;
+      				}
+    			}
+  		}
+	}
 
-.effect {
-  width: 100%;
-  padding: 50px 0px 70px 0px;
-  background-color: $basic-dark-color;
+	.effect {
+  		width: 100%;
+  		padding: 50px 0px 70px 0px;
+  		background-color: $basic-dark-color;
   
-  h2 {
-    color: $basic-light-color;
-    font: {
-      family: 'Playfair Display', serif;
-      weight: 400;
-      size: 25px;
-    }
-    letter-spacing: 3px;
-  }
+  		h2 {
+    			color: $basic-light-color;
+    			font: {
+      				family: 'Playfair Display', serif;
+      				weight: 400;
+      				size: 25px;
+    			}
+    			letter-spacing: 3px;
+  		}
   
-  &:nth-child(2) {
-    margin-top: 50px;
-  }
+  		&:nth-child(2) {
+    			margin-top: 50px;
+  		}
   
-  &:nth-child(2n+1) {
-    background-color: $basic-light-color;
+  		&:nth-child(2n+1) {
+    			background-color: $basic-light-color;
     
-    h2 {
-      color: $basic-dark-color;
-    }
-  }
+    			h2 {
+      				color: $basic-dark-color;
+    			}
+  		}
   
-  .buttons {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
+  		.buttons {
+    			margin-top: 50px;
+    			display: flex;
+    			justify-content: center;
+  		}
   
-  a {
+  		a {
     
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-}
+    			&:last-child {
+      				margin-right: 0px;
+    			}
+  		}
+	}
 
-/*common link styles !!!YOU NEED THEM*/
-.effect {
-  /*display: flex; !!!uncomment this line !!!*/
-  
-  a {
-    text-decoration: none !important;
-    color: $basic-light-color;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-radius;
-    margin-right: 20px;
-    font-size: $font-size;
-    overflow: hidden;
-    position: relative;
+	.effect {
+  		a {
+    			text-decoration: none !important;
+    			color: $basic-light-color;
+    			width: 60px;
+    			height: 60px;
+    			display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			border-radius: $border-radius;
+    			margin-right: 20px;
+			font-size: $font-size;
+    			overflow: hidden;
+    			position: relative;
     
-    i {
-      position: relative;
-      z-index: 3;
-    }
+    			i {
+      				position: relative;
+      				z-index: 3;
+    			}
     
-    &.fb {
-      background-color: $fb-color;
-    }
+    			&.fb {
+      				background-color: $fb-color;
+    			}
     
-    &.tw {
-      background-color: $tw-color;
-    }
+    			&.tw {
+      				background-color: $tw-color;
+			}
     
-    &.g-plus {
-      background-color: $g-plus;
-    }
+    			&.g-plus {
+      				background-color: $g-plus;
+    			}
     
-    &.dribbble {
-      background-color: $dribbble;
-    }
+    			&.dribbble {
+				background-color: $dribbble;
+    			}
     
-    &.pinterest {
-      background-color: $pinterest;
-    }
+    			&.pinterest {
+      				background-color: $pinterest;
+    			}
     
-    &.insta {
-      background-color: $insta;
-    }
+    			&.insta {
+      				background-color: $insta;
+    			}
     
-    &.in {
-      background-color: $in;
-    }
+    			&.in {
+      				background-color: $in;
+    			}
     
-    &.vimeo {
-      background-color: $vimeo;
-    }
-  }
-}
+    			&.vimeo {
+      				background-color: $vimeo;
+    			}
+  		}
+	}
 
-/* aeneas effect */
-
-.effect.aeneas {
+	.effect.aeneas {
   
-  a {
+  	a {
     transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
     
     i {
