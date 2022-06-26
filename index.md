@@ -25,7 +25,7 @@
         background-color:#000;
     }
     .content-center{
-        height:0vh;
+        height:10vh;
         display:flex;
         justify-content:center;
         align-items:center;
