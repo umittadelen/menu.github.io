@@ -92,7 +92,7 @@
     -->
 <center>
   	<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
-	<a href="https://mailto:someone@example.com" class="btn btn-danger  btn-lg btn-block">mail</a>
+	<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>
 </center>
   </body>
 </html>
