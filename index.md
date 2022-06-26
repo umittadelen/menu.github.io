@@ -44,7 +44,7 @@
     }
     
     ul li{
-        margin:10px;
+        margin:20px;
         height:70px;
         width:70px;
         display:flex;
