@@ -16,114 +16,241 @@
 
 
     <style>
-      *{
-        padding:0;
-        margin:0;
+     $basic-dark-color: #212121;
+$basic-light-color: #fff;
+$fb-color: #3b5998;
+$tw-color: #00aced;
+$g-plus: #dd4b39;
+$dribbble: #ea4c89;
+$pinterest: #cb2027;
+$insta: #bc2a8d;
+$in: #007bb6;
+$vimeo: #1ab7ea;
+$border-radius: 10px;
+$font-size: 25px;
+
+/*common styles !!!YOU DON'T NEED THEM */
+.container {
+  margin: 60px auto 0px auto;
+  text-align: center;
+  
+  h1 {
+    font: {
+      family: 'Roboto', sans-serif;
+      weight: 900;
+      size: 30px;
+    }
+    text-transform: uppercase;
+    color: $basic-dark-color;
+    letter-spacing: 3px;
+    
+    span {
+      display: inline-block;
+      
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        width: 34px;
+        height: 2px;
+        background-color: $basic-dark-color;
+        margin: 0px 0px 0px 2px;
+      }
+    }
+  }
+}
+
+.effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: $basic-dark-color;
+  
+  h2 {
+    color: $basic-light-color;
+    font: {
+      family: 'Playfair Display', serif;
+      weight: 400;
+      size: 25px;
+    }
+    letter-spacing: 3px;
+  }
+  
+  &:nth-child(2) {
+    margin-top: 50px;
+  }
+  
+  &:nth-child(2n+1) {
+    background-color: $basic-light-color;
+    
+    h2 {
+      color: $basic-dark-color;
+    }
+  }
+  
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+/*common link styles !!!YOU NEED THEM*/
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+  
+  a {
+    text-decoration: none !important;
+    color: $basic-light-color;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    
+    i {
+      position: relative;
+      z-index: 3;
     }
     
-    body{
-        background-color:#000;
-    }
-    .content-center{
-        height:10vh;
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    &.fb {
+      background-color: $fb-color;
     }
     
-    ul{
-        display:flex;
-        list-style:none;
+    &.tw {
+      background-color: $tw-color;
     }
     
-    
-    @media (max-width:800px) {
-        ul {
-            display: block
-        }
+    &.g-plus {
+      background-color: $g-plus;
     }
     
-    ul li{
-        margin:50px;
-        height:70px;
-        width:70px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-radius:50%;
-        cursor:pointer;
-        position:relative;
-        
+    &.dribbble {
+      background-color: $dribbble;
     }
     
-    ul li i{
-        transition:all 0.3s linear;
+    &.pinterest {
+      background-color: $pinterest;
     }
     
-    
-    ul li:hover i{
-        color:#fff;
-        font-size:40px;
+    &.insta {
+      background-color: $insta;
     }
     
-    ul li:hover::after{
-        opacity:1;
-        transform:scale(0.8);
-       
+    &.in {
+      background-color: $in;
     }
     
-    ul li::after{
-        content:"";
-        position:absolute;
-        height:inherit;
-        width:inherit;
-        border-radius:50%;
-        opacity:0;
-        z-index:-1;
-        transition:all 0.2s linear;
-        
+    &.vimeo {
+      background-color: $vimeo;
+    }
+  }
+}
+
+/* aeneas effect */
+
+.effect.aeneas {
+  
+  a {
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    i {
+      transition: transform 0.4s linear 0s;
     }
     
-    ul li:nth-child(1){
-        
-        border:2px solid #3b5998;
-        color:#3b5998;
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 50%;
+      
+      i {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}
+
+/* jaques effect */
+.effect.jaques {
+  
+  a {
+    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    &:hover {
+      border-radius: 50%;
+    }
+  }
+}
+
+/* egeon effect */
+.effect.egeon {
+  
+  a {
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+    
+    i {
+      transition: transform 0.2s linear 0s;
     }
     
-    ul li:nth-child(1)::after{
-        
-        background-color:#3b5998;
-         color:#3b5998;
+    &:hover {
+      transform: rotate(-90deg);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      
+      i {
+        transform: rotate(90deg);
+      }
     }
+  }
+}
+
+/* claudio effect */
+
+.effect.claudio {
+  
+  a { 
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
     
-    
-    ul li:nth-child(2){
-        
-        border:2px solid #00aced;
-        color:#00aced;
+    &:hover {
+      transform: scale(1.2);
+      border-bottom-left-radius: 50%;
+      border-top-right-radius: 50%;
     }
+  }
+}
+
+/* laertes effect */
+
+.effect.laertes {
+  
+  a {
+    transition: all 0.2s linear 0s;
     
-    ul li:nth-child(2)::after{
-        
-        background-color:#00aced;
-         color:#00aced;
+    i {
+      transition: all 0.2s linear 0s;
     }
-    
-    
-    ul li:nth-child(3){
-        
-        border:2px solid #b60000;
-        color:#b60000;
+   
+    &:hover {
+      border-radius: 50%/20%;
+      
+      i {
+        transform: scale(1.1);
+        text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
+      }
     }
-    
-    ul li:nth-child(3)::after{
-        
-        background-color:#b60000;
-         color:#b60000;
-        
-    }
-    
-    
+  }
+}
     </style>
   </head>
   <body>
@@ -206,13 +333,14 @@
   
 </div>
 <div class="content-center">
-    
-  <ul>
-    <li onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'"><i class="fa fa-facebook fa-2x"></i></li>
-    <li onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'"><i class="fa fa-instagram fa-2x"></i></li>
-    <li onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'"><i class="fa fa-envelope fa-2x"></i></li>
-  </ul>
-  
+  <div class="effect aeneas">
+    <h2>Aeneas</h2>
+    <div class="buttons">
+      <a onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'" href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'" href="#" class="tw" title="Join us on Twitter"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <a onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'" href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+	</div>
 </div>
   </body>
 </html>
