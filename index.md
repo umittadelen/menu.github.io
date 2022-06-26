@@ -171,18 +171,17 @@
     		<i class="icon-facebook inactive"></i>
     		<i class="icon-facebook active"></i>
   	</div>
-</div>
-<div class="content-center"> 
 	<div onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'" class="button-wrap instagram">
   		<div class="button-inner-wrap">
     		<i class="icon-instagram inactive"></i>
     		<i class="icon-instagram active"></i>
   	</div>
+	<div onclick="location.href=''" class="button-wrap envelope">
+  		<div class="button-inner-wrap">
+    		<i class="icon-envelope inactive"></i>
+    		<i class="icon-envelope active"></i>
+  	</div>
 </div>
-
-<a  href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-<a  href="#" class="tw" title="Join us on Twitter"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-<a onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'" href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
   
 
   </body>
