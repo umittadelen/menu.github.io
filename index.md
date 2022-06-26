@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="tr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,19 +17,19 @@
   </head>
   <body>
   <div class="container">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
- 
+	  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="menu/1.jpg" alt="First slide">
+      <img class="d-block w-100" src="..." alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="menu/2.jpg" alt="Second slide">
+      <img class="d-block w-100" src="..." alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="menu/3.jpg" alt="Third slide">
+      <img class="d-block w-100" src="..." alt="Third slide">
     </div>
   </div>
+		  
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -38,18 +38,9 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-
-  	</div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+		  
 </div>
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
