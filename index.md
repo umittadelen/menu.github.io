@@ -45,7 +45,7 @@
     
     ul li{
         margin:30px;
-        height:70px;
+        height:60px;
         width:70px;
         display:flex;
         justify-content:center;
@@ -68,7 +68,7 @@
     
     ul li:hover::after{
         opacity:1;
-        transform:scale(0.4);
+        transform:scale(0.8);
        
     }
     
