@@ -15,7 +15,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <style>
-    $basic-dark-color: #212121;
+	$basic-dark-color: #212121;
 	$basic-light-color: #fff;
 	$fb-color: #3b5998;
 	$tw-color: #00aced;
@@ -24,50 +24,50 @@
 	$pinterest: #cb2027;
 	$insta: #bc2a8d;
 	$in: #007bb6;
-    $vimeo: #1ab7ea;
-    $border-radius: 10px;
-    $font-size: 25px;
+    	$vimeo: #1ab7ea;
+    	$border-radius: 10px;
+    	$font-size: 25px;
 
 /*common styles !!!YOU DON'T NEED THEM */
-    .container {
-        margin: 60px auto 0px auto;
-        text-align: center;
+    	.container {
+        	margin: 60px auto 0px auto;
+        	text-align: center;
   
-    h1 {
-        font: {
-            family: 'Roboto', sans-serif;
-            weight: 900;
-            size: 30px;
-        }
-        text-transform: uppercase;
-        color: $basic-dark-color;
-        letter-spacing: 3px;
+    	h1 {
+        	font: {
+            		family: 'Roboto', sans-serif;
+            		weight: 900;
+            		size: 30px;
+		}
+        	text-transform: uppercase;
+        	color: $basic-dark-color;
+        	letter-spacing: 3px;
     
         span {
-        display: inline-block;
+        	display: inline-block;
       
-        &:before,
-        &:after {
-            content: "";
-            display: block;
-            width: 34px;
-            height: 2px;
-            background-color: $basic-dark-color;
-            margin: 0px 0px 0px 2px;
-        }
-    }
+        	&:before,
+        	&:after {
+            		content: "";
+            		display: block;
+            		width: 34px;
+            		height: 2px;
+            		background-color: $basic-dark-color;
+            		margin: 0px 0px 0px 2px;
+        	}
+    	}
 
-    .effect {
-        width: 100%;
-        padding: 50px 0px 70px 0px;
-        background-color: $basic-dark-color;
+    	.effect {
+       		width: 100%;
+        	padding: 50px 0px 70px 0px;
+        	background-color: $basic-dark-color;
   
         h2 {
-            color: $basic-light-color;
-            font: {
-            family: 'Playfair Display', serif;
-            weight: 400;
-            size: 25px;
+        	color: $basic-light-color;
+            	font: {
+            	family: 'Playfair Display', serif;
+            	weight: 400;
+            	size: 25px;
         }
         letter-spacing: 3px;
     }
@@ -260,14 +260,14 @@
   <div class="effect aeneas">
     <h2>Aeneas</h2>
     <div class="buttons">
-      <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-      <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-      <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-      <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-      <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      	<a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      	<a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      	<a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+     	<a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+      	<a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+	<a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      	<a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    	<a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     </div>
   </div>
   
