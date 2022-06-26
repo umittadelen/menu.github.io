@@ -210,7 +210,7 @@
   <ul>
     <li onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'"><i class="fa fa-facebook fa-2x"></i></li>
     <li onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'"><i class="fa fa-instagram fa-2x"></i></li>
-    <li onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'"><i class="fa fa-envelope fa-2x"></i></li>
+    <li onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'"><i class="fa fa-envelope fa-2x"></i></li>
   </ul>
   
 </div>
