@@ -154,94 +154,94 @@
 
 	.effect.aeneas {
   
-  	a {
-    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  		a {
+    			transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
     
-    i {
-      transition: transform 0.4s linear 0s;
-    }
+    			i {
+      				transition: transform 0.4s linear 0s;
+    			}
     
-    &:hover {
-      transform: rotate(360deg);
-      border-radius: 50%;
+    			&:hover {
+      				transform: rotate(360deg);
+      				border-radius: 50%;
       
-      i {
-        transform: rotate(-360deg);
-      }
-    }
-  }
-}
+      				i {
+					transform: rotate(-360deg);
+      				}
+    			}
+  		}
+	}
 
 /* jaques effect */
-.effect.jaques {
+	.effect.jaques {
   
-  a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  		a {
+			transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
     
-    &:hover {
-      border-radius: 50%;
-    }
-  }
-}
+			&:hover {
+      				border-radius: 50%;
+    			}
+  		}
+	}
 
 /* egeon effect */
-.effect.egeon {
+	.effect.egeon {
   
-  a {
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+  		a {
+    			transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
     
-    i {
-      transition: transform 0.2s linear 0s;
-    }
+    			i {
+      				transition: transform 0.2s linear 0s;
+    			}
     
-    &:hover {
-      transform: rotate(-90deg);
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-left-radius: 50%;
+    			&:hover {
+      				transform: rotate(-90deg);
+      				border-top-left-radius: 50%;
+      				border-top-right-radius: 50%;
+      				border-bottom-left-radius: 50%;
       
-      i {
-        transform: rotate(90deg);
-      }
-    }
-  }
-}
+      				i {
+        				transform: rotate(90deg);
+      				}
+    			}
+  		}
+	}
 
 /* claudio effect */
 
-.effect.claudio {
+	.effect.claudio {
   
-  a { 
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
+  		a { 
+    			transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
     
-    &:hover {
-      transform: scale(1.2);
-      border-bottom-left-radius: 50%;
-      border-top-right-radius: 50%;
-    }
-  }
-}
+    			&:hover {
+				transform: scale(1.2);
+      				border-bottom-left-radius: 50%;
+      				border-top-right-radius: 50%;
+    			}
+  		}
+	}
 
 /* laertes effect */
 
-.effect.laertes {
+	.effect.laertes {
   
-  a {
-    transition: all 0.2s linear 0s;
+  		a {
+    			transition: all 0.2s linear 0s;
     
-    i {
-      transition: all 0.2s linear 0s;
-    }
+    			i {
+      				transition: all 0.2s linear 0s;
+    			}
    
-    &:hover {
-      border-radius: 50%/20%;
+    		&:hover {
+      			border-radius: 50%/20%;
       
-      i {
-        transform: scale(1.1);
-        text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
-      }
-    }
-  }
+      			i {
+        			transform: scale(1.1);
+        			text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
+      			}
+    		}
+  	}
 }
 </style>
 
