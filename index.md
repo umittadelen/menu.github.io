@@ -25,7 +25,7 @@
         background-color:#000;
     }
     .content-center{
-        height:10vh;
+        height:1vh;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -44,7 +44,7 @@
     }
     
     ul li{
-        margin:10px;
+        margin:50px;
         height:70px;
         width:70px;
         display:flex;
