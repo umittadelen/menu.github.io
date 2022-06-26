@@ -15,136 +15,167 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <style>
-	@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+    $basic-dark-color: #212121;
+	$basic-light-color: #fff;
+	$fb-color: #3b5998;
+	$tw-color: #00aced;
+	$g-plus: #dd4b39;
+	$dribbble: #ea4c89;
+	$pinterest: #cb2027;
+	$insta: #bc2a8d;
+	$in: #007bb6;
+    $vimeo: #1ab7ea;
+    $border-radius: 10px;
+    $font-size: 25px;
 
-	#social {
-  		margin: 20px 10px;
-  		text-align: center;
-	}
+/*common styles !!!YOU DON'T NEED THEM */
+    .container {
+        margin: 60px auto 0px auto;
+        text-align: center;
+  
+    h1 {
+        font: {
+            family: 'Roboto', sans-serif;
+            weight: 900;
+            size: 30px;
+        }
+        text-transform: uppercase;
+        color: $basic-dark-color;
+        letter-spacing: 3px;
+    
+        span {
+        display: inline-block;
+      
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            width: 34px;
+            height: 2px;
+            background-color: $basic-dark-color;
+            margin: 0px 0px 0px 2px;
+        }
+    }
 
-	.smGlobalBtn{ /* global button class */
-        	display: inline-block;
-    		position: relative;
-    		cursor: pointer;
-    		width: 50px;
-    		height: 50px;
-    		box-shadow: 0 2px 2px #999;
-    		padding: 0px;
-    		text-decoration: none;
-	    	text-align: center;
-    		color: #fff;
-    		font-size: 25px;
-    		font-weight: normal;
-	    	line-height: 2em;
-    		border-radius: 25px;
-	    	-moz-border-radius:25px;
-    		-webkit-border-radius:25px;
-	}
+    .effect {
+        width: 100%;
+        padding: 50px 0px 70px 0px;
+        background-color: $basic-dark-color;
+  
+        h2 {
+            color: $basic-light-color;
+            font: {
+            family: 'Playfair Display', serif;
+            weight: 400;
+            size: 25px;
+        }
+        letter-spacing: 3px;
+    }
+  
+    &:nth-child(2) {
+        margin-top: 50px;
+    }
+  
+    &:nth-child(2n+1) {
+        background-color: $basic-light-color;
+    
+        h2 {
+            color: $basic-dark-color;
+        }
+    }
+  
+    .buttons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+  
+    a {
+    
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
 
-/* facebook button class*/
-	.facebookBtn{
-    		background: #4060A5;
-	}
-
-	.facebookBtn:before{ /* use :before to add the relevant icons */
-		font-family: "FontAwesome";
-    		content: "\f09a"; /* add facebook icon */
-	}
-
-	.facebookBtn:hover{
-    		color: #4060A5;
-    		background: #fff;
-	}
-
-/* twitter button class*/
-	.twitterBtn{
-		background: #00ABE3;
-	}
-
-	.twitterBtn:before{
-      		font-family: "FontAwesome";
-      		content: "\f099"; /* add twitter icon */
-	}
-
-	.twitterBtn:hover{
-      		color: #00ABE3;
-      		background: #fff;
-	}
-
-/* google plus button class*/
-	.googleplusBtn{
-    		background: #e64522;
-	}
-
-.googleplusBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
+/*common link styles !!!YOU NEED THEM*/
+    .effect {
+  /*display: flex; !!!uncomment this line !!!*/
+  
+        a {
+            text-decoration: none !important;
+            color: $basic-light-color;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            margin-right: 20px;
+            font-size: $font-size;
+            overflow: hidden;
+            position: relative;
+    
+        i {
+            position: relative;
+            z-index: 3;
+        }
+    
+        &.fb {
+            background-color: $fb-color;
+        }
+    
+        &.tw {
+            background-color: $tw-color;
+        }
+    
+        &.g-plus {
+            background-color: $g-plus;
+        }
+    
+        &.dribbble {
+            background-color: $dribbble;
+        }
+    
+        &.pinterest {
+            background-color: $pinterest;
+        }
+    
+        &.insta {
+            background-color: $insta;
+        }
+    
+        &.in {
+            background-color: $in;
+        }
+    
+        &.vimeo {
+            background-color: $vimeo;
+        }
+    }
 }
 
-.googleplusBtn:hover{
-      color: #e64522;
-      background: #fff;
+/* aeneas effect */
+
+.effect.aeneas {
+  
+  a {
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    i {
+      transition: transform 0.4s linear 0s;
+    }
+    
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 50%;
+      
+      i {
+        transform: rotate(-360deg);
+      }
+    }
+  }
 }
 
-/* linkedin button class*/
-.linkedinBtn{
-    background: #0094BC;
-}
-
-.linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
-}
-
-.linkedinBtn:hover{
-      color: #0094BC;
-      background: #fff;
-}
-
-/* pinterest button class*/
-.pinterestBtn{
-    background: #cb2027;
-}
-
-.pinterestBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d2"; /* add pinterest icon */
-}
-
-.pinterestBtn:hover{
-      color: #cb2027;
-      background: #fff;
-}
-
-/* tumblr button class*/
-.tumblrBtn{
-    background: #3a5876;
-}
-
-.tumblrBtn:before{
-      font-family: "FontAwesome";
-      content: "\f173"; /* add tumblr icon */
-}
-
-.tumblrBtn:hover{
-      color: #3a5876;
-      background: #fff;
-}
-
-/* rss button class*/
-.rssBtn{
-    background: #e88845;
-}
-
-.rssBtn:before{
-      font-family: "FontAwesome";
-      content: "\f09e"; /* add rss icon */
-}
-
-.rssBtn:hover{
-      color: #e88845;
-      background: #fff;
-}
 </style>
 
   </head>
@@ -224,14 +255,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
-    <div id="social"><a class="facebookBtn smGlobalBtn" href="#" ></a>
-	<a class="twitterBtn smGlobalBtn" href="#" ></a>
-	<a class="googleplusBtn smGlobalBtn" href="#" ></a>
-	<a class="linkedinBtn smGlobalBtn" href="#" ></a>
-	<a class="pinterestBtn smGlobalBtn" href="#" ></a>
-	<a class="tumblrBtn smGlobalBtn" href="#" ></a>
-	<a class="rssBtn smGlobalBtn" href="#" ></a>
+    <div class="container">
+  <h1>CSS3 Social <span>bu</span>ttons vol.1</h1>
+  <div class="effect aeneas">
+    <h2>Aeneas</h2>
+    <div class="buttons">
+      <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="#" class="dribbble" title="Join us on Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+      <a href="#" class="vimeo" title="Join us on Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+      <a href="#" class="pinterest" title="Join us on Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#" class="in" title="Join us on Linked In"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     </div>
+  </div>
   
 
   </body>
