@@ -14,94 +14,6 @@
     <script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-<style>
-body {
-  text-align: center;
-  font-family: Arial;
-  background: #f8f8f8;
-}
-
-.buttons {
-  margin-top: 160px;
-  
-  a {
-    margin-right: 30px;
-    width: 64px;
-    height: 64px;
-    font-size: 24px;
-    display: inline-block;
-    position: relative;
-    line-height: 64px;
-    background-color: #eaeaea;
-    background-image: linear-gradient(to bottom, #f6f6f6, #eaeaea);
-    border-radius: 32px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), 0 2px 3px rgba(0, 0, 0, .1);
-    
-    &:active {
-      top: 1px;
-      background-image: linear-gradient(to bottom, #eaeaea, #f6f6f6);
-      
-      &::before {
-        top: -9px;
-      }
-    }
-    
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: -8px; right: -8px; bottom: -8px; left: -8px;
-      background-color: #eaeaea;
-      border-radius: 140px;
-      opacity: 0.5;
-      
-      :hover & {
-        opacity: 1;
-      }
-    }
-  }
-  
-  
-}
-
-.twitter:hover::before {
-  background-color: #c6f0f8;
-}
-
-.facebook:hover::before {
-  background-color: #dae1f0;
-}
-
-.youtube:hover::before {
-  background-color: #fadae6;
-}
-
-.twitch:hover::before {
-  background-color: #f8ebb6;
-}
-
-.footer {
-  width: 600px;
-  margin: auto;
-  margin-top: 100px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #cdcdcd;
-  text-shadow: 1px 2px 0 #fff;
-}
-
-.footer a {
-    color: #bebebe;
-    text-decoration: none;
-}
-
-.footer a:hover {
-  color: #bebebe;
-  text-decoration: none;
-  border-bottom:1px dashed #cdcdcd;
-}
-</style>
-
   </head>
   <body>
   <div class="container">
@@ -179,12 +91,13 @@ body {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
 
-<div class="buttons">
-    <a class="twitter" href=""><i class="fa fa-twitter"></i></a>
-    <a class="facebook" href=""><i class="fa fa-facebook"></i></a>
-    <a class="youtube" href=""><i class="fa fa-youtube-play"></i></a>
-    <a class="twitch" href=""><i class="fa fa-twitch"></i></a>
-</div>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn-lg btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
   
 
   </body>
