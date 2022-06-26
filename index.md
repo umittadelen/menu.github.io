@@ -14,7 +14,79 @@
     <script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+    <style>
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
 
+.button-wrap {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  margin: 25px 50px 0;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  
+  &.facebook {
+    background-color: #3B5998;
+    i.active { color: #3B5998; }
+  }
+  
+  &.twitter {
+    background-color: #0AC;
+    i.active { color: #0AC; }
+  }
+  
+  &.pinterest {
+    background-color: #CD2129;
+    i.active { color: #CD2129; }
+  }
+  
+  &.dribbble {
+    background-color: #F26798;
+    i.active { color: #F26798; }
+  }
+  
+  &:hover {
+    .button-inner-wrap {
+      width: 115px;
+      height: 115px;
+      
+      i.inactive { transform: translate(100px, -50%); }
+      i.active { transform: translate(-50%, -50%); }
+    }
+  }
+}
+
+.button-inner-wrap {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #DDD;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  
+  i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 50px;
+    transition: all 0.3s ease;
+    
+    &.inactive {
+      color: #CCC;
+      transform: translate(-50%, -50%);
+    }
+    
+    &.active { transform: translate(-150px, -50%); }
+  }
+}
+    </style>
 
   </head>
   <body>
@@ -92,252 +164,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-        <style>
-     $basic-dark-color: #212121;
-$basic-light-color: #fff;
-$fb-color: #3b5998;
-$tw-color: #00aced;
-$g-plus: #dd4b39;
-$dribbble: #ea4c89;
-$pinterest: #cb2027;
-$insta: #bc2a8d;
-$in: #007bb6;
-$vimeo: #1ab7ea;
-$border-radius: 10px;
-$font-size: 25px;
 
-/*common styles !!!YOU DON'T NEED THEM */
-.container {
-  margin: 60px auto 0px auto;
-  text-align: center;
-  
-  h1 {
-    font: {
-      family: 'Roboto', sans-serif;
-      weight: 900;
-      size: 30px;
-    }
-    text-transform: uppercase;
-    color: $basic-dark-color;
-    letter-spacing: 3px;
-    
-    span {
-      display: inline-block;
-      
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        width: 34px;
-        height: 2px;
-        background-color: $basic-dark-color;
-        margin: 0px 0px 0px 2px;
-      }
-    }
-  }
-}
-
-.effect {
-  width: 100%;
-  padding: 50px 0px 70px 0px;
-  background-color: $basic-dark-color;
-  
-  h2 {
-    color: $basic-light-color;
-    font: {
-      family: 'Playfair Display', serif;
-      weight: 400;
-      size: 25px;
-    }
-    letter-spacing: 3px;
-  }
-  
-  &:nth-child(2) {
-    margin-top: 50px;
-  }
-  
-  &:nth-child(2n+1) {
-    background-color: $basic-light-color;
-    
-    h2 {
-      color: $basic-dark-color;
-    }
-  }
-  
-  .buttons {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  a {
-    
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-}
-
-/*common link styles !!!YOU NEED THEM*/
-.effect {
-  /*display: flex; !!!uncomment this line !!!*/
-  
-  a {
-    text-decoration: none !important;
-    color: $basic-light-color;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-radius;
-    margin-right: 20px;
-    font-size: $font-size;
-    overflow: hidden;
-    position: relative;
-    
-    i {
-      position: relative;
-      z-index: 3;
-    }
-    
-    &.fb {
-      background-color: $fb-color;
-    }
-    
-    &.tw {
-      background-color: $tw-color;
-    }
-    
-    &.g-plus {
-      background-color: $g-plus;
-    }
-    
-    &.dribbble {
-      background-color: $dribbble;
-    }
-    
-    &.pinterest {
-      background-color: $pinterest;
-    }
-    
-    &.insta {
-      background-color: $insta;
-    }
-    
-    &.in {
-      background-color: $in;
-    }
-    
-    &.vimeo {
-      background-color: $vimeo;
-    }
-  }
-}
-
-/* aeneas effect */
-
-.effect.aeneas {
-  
-  a {
-    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-    
-    i {
-      transition: transform 0.4s linear 0s;
-    }
-    
-    &:hover {
-      transform: rotate(360deg);
-      border-radius: 50%;
-      
-      i {
-        transform: rotate(-360deg);
-      }
-    }
-  }
-}
-
-/* jaques effect */
-.effect.jaques {
-  
-  a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-    
-    &:hover {
-      border-radius: 50%;
-    }
-  }
-}
-
-/* egeon effect */
-.effect.egeon {
-  
-  a {
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
-    
-    i {
-      transition: transform 0.2s linear 0s;
-    }
-    
-    &:hover {
-      transform: rotate(-90deg);
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-left-radius: 50%;
-      
-      i {
-        transform: rotate(90deg);
-      }
-    }
-  }
-}
-
-/* claudio effect */
-
-.effect.claudio {
-  
-  a { 
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
-    
-    &:hover {
-      transform: scale(1.2);
-      border-bottom-left-radius: 50%;
-      border-top-right-radius: 50%;
-    }
-  }
-}
-
-/* laertes effect */
-
-.effect.laertes {
-  
-  a {
-    transition: all 0.2s linear 0s;
-    
-    i {
-      transition: all 0.2s linear 0s;
-    }
-   
-    &:hover {
-      border-radius: 50%/20%;
-      
-      i {
-        transform: scale(1.1);
-        text-shadow: 0 0 12px rgba($basic-dark-color, 0.6);
-      }
-    }
-  }
-}
-    </style>
 <div class="content-center"> 
-  <div class="effect aeneas">
-    <h2>Aeneas</h2>
+	<div onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'" class="button-wrap facebook">
+  		<div class="button-inner-wrap">
+    		<i class="icon-facebook inactive"></i>
+    		<i class="icon-facebook active"></i>
+  	</div>
+</div>
     <div class="buttons">
-      <a onclick="location.href='https://www.facebook.com/istanbulwhitepalacevenue/'" href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a  href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       <a onclick="location.href='mailto:lusakaistanbulcaferestaurant@gmail.com'" href="#" class="tw" title="Join us on Twitter"><i class="fa fa-envelope" aria-hidden="true"></i></a>
       <a onclick="location.href='https://z-p15.www.instagram.com/istanbul_cafe_rest_lusaka/'" href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    </div>
-	</div>
 </div>
   
 </div>
