@@ -13,72 +13,8 @@
     <script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	  <style>
-		  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swrap');
 		  * {
-		  	font-family: 'Source Sans Pro', sans-serif;
-		  	letter-spacing: 4px;
 		  	background-color: #000000;
-		  }
-		  .container {
-		  	display: flex;
-		  	flex-direction: row;
-		  	fustify-content: space-evenly;
-		  	align-items: center;
-		  	text-align: center;
-		  	min-height: 100vh;
-		  	
-		  }
-		  .btn-1 {
-		  	width: 300px;
-		  	height: 100px;
-		  	border: none;
-		  	color: white;
-		  	background-color: rgb(255, 0, 58);
-		  	border-radius: 4px;
-		  	box-shadow: insert 0 0 0 0 #f9e506;
-		  	transition: ease-out 0.3s;
-		  	font-size: 2rem;
-		  	outline: none;
-		  }
-		  .btn-1:hover {
-		  	box-shadow: insert 100px 0 0 0 #f9e506;
-		  	cursor: pointer;
-		  	color: #000;
-		  }
-		  .btn-2 {
-		  	width: 300px;
-		  	height: 100px;
-		  	border: none;
-		  	color: white;
-		  	border-radius: 4px;
-		  	transition: ease-out 0.3s;
-		  	font-size: 2rem;
-		  	outline: none;
-		  	border: 3px solid #42fbf2;
-		  	position: relative;
-		  	z-index: 1;
-		  }
-		  .btn-2:hover {
-		  	color: #fff;
-		  	cursor: pointer;
-		  }
-		  btn-2:before {
-		  	transition: 0.5s all ease;
-		  	position: absolute;
-		  	top: 0;
-		  	left: 50%
-		  	right: 50%
-		  	bottom: 0;
-		  	opacity: 0;
-		  	content: "";
-		  	background-color: #42fbf2;
-		  }
-		  .btn-2:hover:before {
-		  	transition: 0.5s all ease;
-		  	left: 0;
-		  	right: 0;
-		  	opacity: 1;
-		  	z-index: -1;
 		  }
           </style>
   </head>
