@@ -12,13 +12,9 @@
 	<style>
 		.carousel-control-prev-icon,
 		.carousel-control-next-icon {
-  			height: 100px;
-  			width: 100px;
   			outline: black;
-  			background-size: 100%, 100%;
   			border-radius: 50%;
   			border: 1px solid black;
-  			background-image: none;
 		}
 		body{
             		margin-top: 100px !important;
