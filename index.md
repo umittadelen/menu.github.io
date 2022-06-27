@@ -22,6 +22,7 @@
         	.btn {
             		background-color: #F48224;
             		color: #fff;
+			text-color: #000;
             		font-size: 20px;
             		font-weight: 800;
             		text-transform: uppercase;
@@ -155,7 +156,7 @@
 		</button>
 	</div>
 	<div class="container">
-		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook <i class="fa-solid fa-facebook"></i></a>
+		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook <i class="fa-brands fa-facebook"></i></a>
 		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail <i class="fa fa-envelope"></i></a>
 		<a href="https://www.instagram.com/istanbul_cafe_rest_lusaka/" class="btn btn-warning  btn-lg btn-block" >instagram <i class="fa fa-instagram"></i></a>
 	</div>
