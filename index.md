@@ -28,6 +28,48 @@
     <div class="carousel-item">
       <img src="menu/3.jpg" class="d-block w-100" alt="...">
     </div>
+	  <div class="carousel-item">
+      <img src="menu/4.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/5.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/6.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/7.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/8.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/9.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/10.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/11.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/12.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/13.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/14.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/15.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/16.jpg" class="d-block w-100" alt="...">
+    </div>
+	  <div class="carousel-item">
+      <img src="menu/17.jpg" class="d-block w-100" alt="...">
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
