@@ -160,7 +160,7 @@
 	<div class="container">
 		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block"><i class="fa-brands fa-facebook"></i></a>
 		<a href="https://www.instagram.com/istanbul_cafe_rest_lusaka/" class="btn btn-warning  btn-lg btn-block" ><i class="fa-brands fa-instagram-square"></i></a>
-		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
+		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 	</div>
 </body>
 </html>
