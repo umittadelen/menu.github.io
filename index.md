@@ -10,6 +10,16 @@
 	<script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<style>
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+  			height: 100px;
+  			width: 100px;
+  			outline: black;
+  			background-size: 100%, 100%;
+  			border-radius: 50%;
+  			border: 1px solid black;
+  			background-image: none;
+		}
 		body{
             		margin-top: 100px !important;
         	}
@@ -23,6 +33,7 @@
             		border-radius: 0 !important;
             		border: none;
             		transition:all 0.3s ease 0s;
+			top: 30px;
 		}
         	.btn:hover,
         	.btn.active:hover{
@@ -150,8 +161,5 @@
 	<div class="container">
 		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
 		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>
-		<div class="col-sm-3">
-			<a href="#" class="btn btn-lg">Button</a>
-		</div>
 	</div>
 </body>
