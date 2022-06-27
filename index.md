@@ -9,6 +9,58 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style>
+		body{
+            		margin-top: 100px !important;
+        	}
+        	.btn {
+            		background-color: #F48224;
+            		color: #fff;
+            		font-size: 20px;
+            		font-weight: 800;
+            		text-transform: uppercase;
+            		position: relative;
+            		border-radius: 0 !important;
+            		border: none;
+            		transition:all 0.3s ease 0s;
+		}
+        	.btn:hover,
+        	.btn.active:hover{
+            		color: #ffffff;
+		}
+        	.btn:before{
+            		content: "";
+            		position: absolute;
+            		top: -7px;
+            		left: 0;
+            		background-color:#2E0014;
+            		width: 30%;
+            		height: 4px;
+            		transition:all 0.3s ease 0s;
+        	}
+        	.btn:after{
+            		content: "";
+            		position: absolute;
+            		bottom: -7px;
+            		right: 0;
+		 	background-color:#2E0014;
+            		width: 30%;
+            		height: 4px;
+			transition:all 0.3s ease 0s;
+        	}
+		.btn:hover:before,
+        	.btn:hover:after,
+        	.btn.active:before,
+        	.btn.active:after{
+        		width: 100%;
+		}
+
+        	@media screen and (max-width: 575px){
+            		.btn{
+                		margin-bottom: 50px !important;
+            		}
+        	}
+	</style>
 </head>
 	
 <body>
@@ -96,7 +148,10 @@
 		</button>
 	</div>
 	<div class="container">
-			<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
-			<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>
+		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
+		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>
+		<div class="col-sm-3">
+			<a href="#" class="btn btn-lg">Button</a>
+		</div>
 	</div>
 </body>
