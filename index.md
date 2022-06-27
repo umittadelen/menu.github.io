@@ -36,7 +36,7 @@
 		}
         	.btn:hover,
         	.btn.active:hover{
-            		color: #ffffff;
+            		color: #000;
 		}
         	.btn:before{
             		content: "";
