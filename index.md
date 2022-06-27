@@ -9,6 +9,7 @@
 	<script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<style>
+		background-color: black;
 		.carousel-control-prev-icon {
     			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 		}
@@ -20,7 +21,7 @@
         	}
         	.btn {
             		background-color: #F48224;
-            		color: #000;
+            		color: #fff;
             		font-size: 20px;
             		font-weight: 800;
             		text-transform: uppercase;
@@ -32,7 +33,7 @@
 		}
         	.btn:hover,
         	.btn.active:hover{
-            		color: #000;
+            		color: #fff;
 		}
         	.btn:before{
             		content: "";
