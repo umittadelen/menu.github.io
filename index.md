@@ -155,8 +155,8 @@
 		</button>
 	</div>
 	<div class="container">
-		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
-		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>,
+		<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook <i class="fa-solid fa-facebook"></i></a>
+		<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail <i class="fa fa-envelope"></i></a>
 		<a href="https://www.instagram.com/istanbul_cafe_rest_lusaka/" class="btn btn-warning  btn-lg btn-block" >instagram <i class="fa fa-instagram"></i></a>
 	</div>
 </body>
