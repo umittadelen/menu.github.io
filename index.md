@@ -158,7 +158,7 @@
 		<a href="https://www.instagram.com/istanbul_cafe_rest_lusaka/" class="btn btn-warning  btn-lg btn-block" ><i class="fa-brands fa-instagram-square"></i></a>
 		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
-		<a href="https://g.page/istanbulwhitepalacevenue?share"><i class="fa-solid fa-location-dot"></i></a>
+		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
 	</div>
 </body>
 </html>
