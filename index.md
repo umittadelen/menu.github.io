@@ -16,28 +16,28 @@
 
   </head>
   <body>
-  <div class="container">
-	  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	  
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="menu/1.jpg" alt="First slide">
+      <img src="menu/1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="menu/2.jpg" alt="Second slide">
+      <img src="menu/2.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="menu/3.jpg" alt="Third slide">
+      <img src="menu/3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-		  
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 		  
 </div>
   </div>
@@ -55,3 +55,4 @@
   	<a href="https://www.facebook.com/istanbulwhitepalacevenue/" class="btn btn-primary  btn-lg btn-block">facebbook</a>
 	<a href="https://mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block">mail</a>
 </center>
+</body>
