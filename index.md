@@ -39,7 +39,7 @@
             		position: absolute;
             		top: -7px;
             		left: 0;
-            		background-color:#2E0014;
+            		background-color:#0BADCC;
             		width: 30%;
             		height: 4px;
             		transition:all 0.3s ease 0s;
@@ -49,7 +49,7 @@
             		position: absolute;
             		bottom: -7px;
             		right: 0;
-		 	background-color:#2E0014;
+		 	background-color:#0BADCC;
             		width: 30%;
             		height: 4px;
 			transition:all 0.3s ease 0s;
@@ -68,7 +68,7 @@
         	}
 	</style>
 </head>
-<body style="background-color:powderblue;">
+<body style="background-color:black;">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
