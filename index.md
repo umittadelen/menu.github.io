@@ -20,7 +20,7 @@
         	}
         	.btn {
             		background-color: #F48224;
-            		color: #fff;
+            		color: #000;
             		font-size: 20px;
             		font-weight: 800;
             		text-transform: uppercase;
@@ -32,7 +32,7 @@
 		}
         	.btn:hover,
         	.btn.active:hover{
-            		color: #fff;
+            		color: #000;
 		}
         	.btn:before{
             		content: "";
