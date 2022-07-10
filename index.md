@@ -19,7 +19,7 @@
             		margin-top: 100px !important;
         	}
         	.btn {
-            		background-color: #B5F284;
+            		background-color: #29D6B9;
             		color: #000;
             		font-size: 20px;
             		font-weight: 800;
@@ -49,7 +49,7 @@
             		position: absolute;
             		bottom: -7px;
             		right: 0;
-		 	background-color:#0BADCC;
+		 	background-color:#29D6B9;
             		width: 30%;
             		height: 4px;
 			transition:all 0.3s ease 0s;
