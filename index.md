@@ -39,7 +39,7 @@
             		position: absolute;
             		top: -7px;
             		left: 0;
-            		background-color:#0BADCC;
+            		background-color:#5485CD;
             		width: 30%;
             		height: 4px;
             		transition:all 0.3s ease 0s;
@@ -49,7 +49,7 @@
             		position: absolute;
             		bottom: -7px;
             		right: 0;
-		 	background-color:#29D6B9;
+		 	background-color:#5485CD;
             		width: 30%;
             		height: 4px;
 			transition:all 0.3s ease 0s;
