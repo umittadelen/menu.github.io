@@ -74,7 +74,7 @@
     			overflow: hidden;       
 			border: none;
   			color: black;
-  			padding: 15px 15px;
+  			padding: 20px 20px;
   			text-align: center;
   			text-decoration: none;
 		}
