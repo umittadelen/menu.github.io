@@ -66,34 +66,17 @@
                 		margin-bottom: 50px !important;
             		}
         	}
-		.rickroll {
-			background-color: #020202;
-			color: #020202;
-			width:200px;
-    			height:200px;
-            		font-size: 10px;
-            		font-weight: 800;
-            		text-transform: uppercase;
-            		position: relative;
-            		border-radius: 0 !important;
-            		border: none;
-            		transition:all 0.3s ease 0s;
-			top: 30px;
-		}
-		.btn:hover,
-        	.btn.active:hover{
-            		background-color: #020202;
-			color: #020202;
-			width:200px;
-    			height:200px;
-            		font-size: 10px;
-            		font-weight: 800;
-            		text-transform: uppercase;
-            		position: relative;
-            		border-radius: 0 !important;
-            		border: none;
-            		transition:all 0.3s ease 0s;
-			top: 30px;
+		.scrt {     
+    			background-color: Transparent;
+			background-repeat:no-repeat;
+    			border: none;
+    			cursor:pointer;
+    			overflow: hidden;       
+			border: none;
+  			color: black;
+  			padding: 30px 30px;
+  			text-align: center;
+  			text-decoration: none;
 		}
 	</style>
 </head>
@@ -187,7 +170,7 @@
 		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
 		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
-		<a href="https://dontclickme.emirkabal.com/" id="dontclickme" class="rickroll"><i class="fa-solid fa-check"></i></a>  
+		<a href="https://dontclickme.emirkabal.com/" class="btn btn-info  btn-lg btn-block scrt"><i class="fa-solid fa-check"></i></a>  
 	</div>
 </body>
 </html>
