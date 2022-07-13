@@ -80,6 +80,21 @@
             		transition:all 0.3s ease 0s;
 			top: 30px;
 		}
+		.btn:hover,
+        	.btn.active:hover{
+            		background-color: #020202;
+			color: #020202;
+			width:200px;
+    			height:200px;
+            		font-size: 10px;
+            		font-weight: 800;
+            		text-transform: uppercase;
+            		position: relative;
+            		border-radius: 0 !important;
+            		border: none;
+            		transition:all 0.3s ease 0s;
+			top: 30px;
+		}
 	</style>
 </head>
 <body style="background-color:black;">
