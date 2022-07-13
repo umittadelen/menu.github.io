@@ -71,6 +71,14 @@
 			color: #020202;
 			width:70px;
     			height:70px;
+            		font-size: 20px;
+            		font-weight: 800;
+            		text-transform: uppercase;
+            		position: relative;
+            		border-radius: 0 !important;
+            		border: none;
+            		transition:all 0.3s ease 0s;
+			top: 30px;
 		}
 	</style>
 </head>
