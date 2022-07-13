@@ -66,7 +66,11 @@
                 		margin-bottom: 50px !important;
             		}
         	}
-		.rickroll {background-color: #010101;}
+		.rickroll {
+			background-color: #020202;
+			width:30px;
+    			height:30px;
+		}
 	</style>
 </head>
 <body style="background-color:black;">
@@ -160,7 +164,7 @@
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
 		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
 		<a href="https://dontclickme.emirkabal.com/" class="btn btn-info  btn-lg btn-block" id="dontclickme"><i class="fa-solid fa-location-dot"></i></a>
-		<button href="https://dontclickme.emirkabal.com/" id="dontclickme" class="rickroll"><i class="fa-solid fa-check"></i></button>  
+		<a href="https://dontclickme.emirkabal.com/" id="dontclickme" class="rickroll"><i class="fa-solid fa-check"></i></a>  
 	</div>
 </body>
 </html>
