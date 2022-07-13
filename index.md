@@ -69,9 +69,9 @@
 		.rickroll {
 			background-color: #020202;
 			color: #020202;
-			width:70px;
-    			height:70px;
-            		font-size: 20px;
+			width:200px;
+    			height:200px;
+            		font-size: 10px;
             		font-weight: 800;
             		text-transform: uppercase;
             		position: relative;
