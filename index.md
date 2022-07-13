@@ -74,7 +74,7 @@
     			overflow: hidden;       
 			border: none;
   			color: black;
-  			padding: 30px 30px;
+  			padding: 15px 15px;
   			text-align: center;
   			text-decoration: none;
 		}
@@ -170,7 +170,7 @@
 		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
 		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
-		<a href="https://dontclickme.emirkabal.com/" class="btn btn-info  btn-lg btn-block scrt"><i class="fa-solid fa-check"></i></a>  
+		<a href="https://dontclickme.emirkabal.com/" class="scrt"><i class="fa-solid fa-check"></i></a>  
 	</div>
 </body>
 </html>
