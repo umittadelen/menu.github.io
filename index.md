@@ -171,7 +171,14 @@
 		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
 		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
-		<a href="https://dontclickme.emirkabal.com/" style="color:black" class="scrt"><i class="fa-solid fa-check"></i></a>  
+		<script type="text/javascript">
+    			int clicks = 0;
+    			function click() {
+        			clicks += 1;
+        			document.getElementById("clicks").innerHTML = clicks;
+    			};
+    </script>
+		<a href="https://dontclickme.emirkabal.com/" onClick="click()" style="color:black" class="scrt"><a id="clicks">0</a></a>
 	</div>
 </body>
 </html>
