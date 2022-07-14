@@ -73,7 +73,7 @@
     			cursor:pointer;
     			overflow: hidden;       
 			border: none;
-  			color: black;
+  			color: #000;
   			padding: 20px 20px;
   			text-align: center;
   			text-decoration: none;
@@ -178,7 +178,7 @@
         			document.getElementById("clicks").innerHTML = clicks;
     			};
     </script>
-		<a href="https://dontclickme.emirkabal.com/" onClick="click()" style="color:black" class="scrt"><a id="clicks">0</a></a>
+		<a href="https://dontclickme.emirkabal.com/" onClick="click()" style="color:black" class="scrt"><a id="clicks" style="color:black" >0</a></a>
 	</div>
 </body>
 </html>
