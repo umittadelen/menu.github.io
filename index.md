@@ -8,6 +8,21 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script src="https://kit.fontawesome.com/5ffd3c4e9b.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+		var counterVal = 0;
+		function incrementClick() {
+    			updateDisplay(++counterVal);
+		}
+
+		function resetCounter() {
+    			counterVal = 0;
+   			updateDisplay(counterVal);
+		}
+
+		function updateDisplay(val) {
+    			document.getElementById("counter-label").innerHTML = val;
+		}
+	</script>
 	<style>
 		.carousel-control-prev-icon {
     			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -171,14 +186,7 @@
 		<a href="mailto:lusakaistanbulcaferestaurant@gmail.com" class="btn btn-danger  btn-lg btn-block"><i class="fa fa-envelope"></i></a>
 		<a href="https://wa.me/+260973183717/" class="btn btn-success  btn-lg btn-block"><i class="fa-brands fa-whatsapp-square"></i></a>
 		<a href="https://g.page/istanbulwhitepalacevenue?share" class="btn btn-info  btn-lg btn-block"><i class="fa-solid fa-location-dot"></i></a>
-		<script type="text/javascript">
-    			int clicks = 0;
-    			function click() {
-        			clicks += 1;
-        			document.getElementById("clicks").innerHTML = clicks;
-    			};
-    </script>
-		<a href="https://dontclickme.emirkabal.com/" onClick="click()" style="color:black" class="scrt"><a id="clicks" style="color:black" >0</a></a>
+		<a href="https://dontclickme.emirkabal.com/" style="color:black" onclick="incrementClick()" class="scrt"><h3 id="counter-label">0</h3></a>
 	</div>
 </body>
 </html>
