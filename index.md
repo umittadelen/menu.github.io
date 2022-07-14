@@ -88,7 +88,6 @@
     			cursor:pointer;
     			overflow: hidden;       
 			border: none;
-  			color: #000;
   			padding: 20px 20px;
   			text-align: center;
   			text-decoration: none;
